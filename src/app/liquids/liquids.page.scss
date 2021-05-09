@@ -1,0 +1,48 @@
+ion-toolbar {
+    --background: rgb(219, 219, 219);
+
+}
+ion-title {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(99, 99, 99);
+}
+form {
+    margin: 7%;
+    margin-top: 20%;
+    font-size: 16px; 
+    font-family: sans-serif;
+}
+
+#Selection {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+    margin-bottom: 10%;
+
+}
+
+#Selection2 {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+}
+
+#value {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+    text-align: center ;
+}
+
+#convertedOutput {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+    text-align: center;
+margin-top: 20%;
+}
+
+ion-menu-button{
+    --color: rgb(116, 116, 116);
+}
+
+p{
+    margin-left: 2%;
+}

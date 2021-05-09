@@ -1,0 +1,18 @@
+*{
+    font-family:lato;
+}
+
+.menu-header-bg{
+    height: 180px;
+    width: 350px;
+    background-image: url(stone.jpg) ;
+    opacity: 40%;
+    //background: #7590d6;
+    //background:linear-gradient(90deg, #7590d6,#4d71d7 100%);
+    box-shadow: inset 0px 0px 20px  rgb(110, 110, 110);
+    transform: rotate(-15deg);
+    border-radius: 10px 10px 10px 50px;
+    margin-left: -18px;
+    margin-top:-50px;
+    margin-bottom:60px;
+}

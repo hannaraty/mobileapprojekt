@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title >Temperature</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+  <form>
+ 
+    <!-- Select 1-->
+    <p>From</p>
+    <ion-select name="converts" id="Selection" [(ngModel)]="eka">
+      <ion-select-option value="Celsius">Celsius</ion-select-option>
+      <ion-select-option value="Fahrenheit">Fahrenheit</ion-select-option>
+      <ion-select-option value="Kelvin">Kelvin</ion-select-option>
+    </ion-select>
+ 
+    <!-- Select 2-->
+    <p>To</p>
+    <ion-select name="converts2" id="Selection2" [(ngModel)]="toka">
+      <ion-select-option value="Celsius">Celsius</ion-select-option>
+      <ion-select-option value="Fahrenheit">Fahrenheit</ion-select-option>
+      <ion-select-option value="Kelvin">Kelvin</ion-select-option>
+    </ion-select>
+ 
+ 
+    <!--INPUT-->
+    <br>
+
+    <p>Value</p>
+    <ion-input type="number" name="value" [(ngModel)]="value" id="value" placeholder="Insert value" (ionChange)="Conversion()"> </ion-input>
+ 
+ 
+    <!--RESULT -->
+
+    <p>Conversion</p>
+    <div class="ion-input" type="number"  name="convertedOutput" [(ngModel)]="convertedOutput" id="convertedOutput" value="Disabled">
+    </div>
+ 
+ 
+ 
+  </form>
+ 
+ 
+</ion-content>

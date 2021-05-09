@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Length</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+  <form>
+ 
+    <!-- Select the length measurement to convert from-->
+    <p>From</p>
+    <ion-select name="converts" id="Selection" [(ngModel)]="eka">
+      <ion-select-option value="feet1">Feet</ion-select-option>
+      <ion-select-option value="meters1">Meters</ion-select-option>
+      <ion-select-option value="inches1">Inches</ion-select-option>
+      <ion-select-option value="centimeters1">Centimeters</ion-select-option>
+      <ion-select-option value="yards1">Yards</ion-select-option>
+      <ion-select-option value="kilometers1">Kilometers</ion-select-option>
+      <ion-select-option value="miles1">Miles</ion-select-option>
+    </ion-select>
+ 
+    <!-- Select the length measurement to convert to-->
+    <p>To</p>
+    <ion-select name="converts2" id="Selection2" [(ngModel)]="toka">
+      <ion-select-option value="feet1">Feet</ion-select-option>
+      <ion-select-option value="meters1">Meters</ion-select-option>
+      <ion-select-option value="inches1">Inches</ion-select-option>
+      <ion-select-option value="centimeters1">Centimeters</ion-select-option>
+      <ion-select-option value="yards1">Yards</ion-select-option>
+      <ion-select-option value="kilometers1">Kilometers</ion-select-option>
+      <ion-select-option value="miles1">Miles</ion-select-option>
+    </ion-select>
+ 
+ 
+
+<br>
+    <!--Input desired value-->
+    
+<p>Value</p>
+<ion-input type="number" name="value" [(ngModel)]="value" id="value" placeholder="Insert value" (ionChange)="Conversion()"> </ion-input>
+
+    <!--Converted length measurment value -->
+
+<p>Conversion</p>
+<div class="ion-input" type="number"  name="convertedOutput" [(ngModel)]="convertedOutput" id="convertedOutput" value="Disabled">
+</div>   
+</form>
+</ion-content>

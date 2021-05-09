@@ -1,0 +1,48 @@
+ion-toolbar {
+    --background: rgb(219, 219, 219);
+
+}
+ion-title {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(99, 99, 99);
+
+}
+#formi {
+    margin: 7% !important;
+    margin-top: 20% !important;
+    font-size: 16px !important; 
+    font-family: sans-serif !important;
+}
+
+#fromCurr {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+   
+}
+
+#toCurr {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+    text-align: center;
+}
+
+#value {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+    text-align: center;
+}
+
+#convertedOutput {
+    border-bottom: solid;
+    border-color: rgb(224, 224, 224);
+    text-align: center;
+
+}
+ion-menu-button{
+    --color: rgb(116, 116, 116);
+}
+
+p{
+    margin-left: 2%;
+}

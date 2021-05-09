@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Currency</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="formi">
+  <!-- Select 1-->
+      <p>From</p>
+      <ion-select id="fromCurr" [(ngModel)]="fromCurr" (ionChange)="getCurrencyRate()">
+        <ion-select-option *ngFor="let item of countryCodes" selected value="{{item}}">{{item}}</ion-select-option>
+      </ion-select>
+      <!-- shows full name of the currency-->
+      <p>{{countryNames.get(fromCurr)}}</p>
+   
+   <!-- Select 2-->
+      <p>To</p>
+      <ion-select id="toCurr" [(ngModel)]="toCurr" (ionChange)="getCurrencyRate()">
+        <ion-select-option *ngFor="let item of countryCodes" value="{{item}}">{{item}}</ion-select-option>
+      </ion-select>
+      <!-- shows full name of the currency-->
+      <p>{{countryNames.get(toCurr)}}</p>
+    <br>
+    <br>
+    <br>Value
+      <ion-input type="number" id="value" [(ngModel)]="fromValue" placeholder="Insert value" (keyup)="calculateCurrencyOne()"></ion-input>
+     
+      <!-- shows the conversion rate from select 1 to 2-->
+      <p>Conversion rate: {{resultRate}}</p>
+
+      <br>Conversion
+      <ion-input type="number" id="convertedOutput" [(ngModel)]="toValue" (keyup)="calculateCurrencyTwo()"></ion-input>
+    <br>
+  
+  <!-- #endregion -->
+</div>
+</ion-content>
